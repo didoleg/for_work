@@ -27,10 +27,10 @@ for file in tqdm(target_list):
     new_file = f'_{file[16:18]}_{file[13:15]}_{file[8:12]}-{file[19:21]}.{file[22:24]}.{file[25:27]}.avi'
     tree_folder = os.listdir(f'{folder_path}')
 
-    if new_file not in tree_folder and os.path.getsize(file) < 1300000000:
+    if new_file not in tree_folder and os.path.getsize(file) > 1300000000:
         convert_file(file, new_file, folder_path)
 
-    elif new_file in tree_folder and os.path.getsize(file) < 1300000000:
+    elif new_file in tree_folder and os.path.getsize(file) > 1300000000:
         new_file_name = f'_{file[16:18]}_{file[13:15]}_{file[8:12]}-{file[19:21]}.{file[22:24]}.{file[25:27]}_({len(tree_folder)}).avi '
         convert_file(file, new_file_name, folder_path)
 
