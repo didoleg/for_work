@@ -3,7 +3,7 @@ from tqdm import tqdm
 
 
 def convert_file(file, new_file, folder_path):
-    cmd = f'ffmpeg -loglevel info -i {file} -b:v 3M -r 25 -s 720x526 {new_file}'
+    cmd = f'ffmpeg -hide_banner -loglevel panic -i {file} -b:v 3M -r 25 -s 720x526 {new_file}'
     args = shlex.split(cmd)
     convert = subprocess.Popen(args, stdout=subprocess.PIPE)
     subprocess.Popen.wait(convert)
