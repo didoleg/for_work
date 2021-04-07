@@ -7,12 +7,15 @@ for num, element in enumerate(some_list):
             if code_i == 43 or code_i == 45:
                 new_element = list(some_list.pop(num))
                 new_element.insert(1, '0')
-                some_list.insert(num, f'{"".join(new_element)}')
+                some_list.insert(num, f'"{"".join(new_element)}"')
                 break
-
             elif len(element) == 1:
                 some_list.pop(num)
                 some_list.insert(num, f'"0{element}"')
+            else:
+                some_list.pop(num)
+                some_list.insert(num, f'"{element}"')
+                break
 
 
 result_str = ' '.join(some_list)
