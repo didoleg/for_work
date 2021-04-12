@@ -9,7 +9,6 @@ def thesaurus_adv(*args):
             if surname in name_dict:
                 for val in name_dict.values():
                     if name in val:
-                        print(True)
                         val[name].append(f'{people}')
                         break
                     else:
