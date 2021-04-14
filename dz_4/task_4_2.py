@@ -10,5 +10,3 @@ print(f"Один Белорусский рубль {curs} рублей")
 
 if __name__ == '__main__':
     pass
-# https://pythonru.com/biblioteki/prodvinutoe-rukovodstvo-po-biblioteke-python-requests
-# https://www.youtube.com/watch?v=IK448-nC8yU
