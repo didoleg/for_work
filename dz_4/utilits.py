@@ -27,5 +27,6 @@ def course_money(args):
     else:
         print(money_dict.get(args))
 
+if __name__ == '__main__':
+    course_money('USD')
 
-course_money('USD')
