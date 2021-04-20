@@ -11,6 +11,3 @@ with open('user.csv', encoding='utf-8') as f1, open('hobby.csv', encoding='utf-8
                 f.write(f'{name}: {hobby}\n')
         else:
             sys.exit(1)
-
-
-
