@@ -16,4 +16,3 @@ else:
     sys.exit(1)
 
 
-print(person_hobby)
