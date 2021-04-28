@@ -1,0 +1,137 @@
+POPUP "&Failai"
+  MENUITEM "&Keisti poþymius...", cm_SetAttrib
+  MENUITEM "&Pakuoti...\tAlt+F5", cm_PackFiles
+  MENUITEM "&Iðpakuoti...\tAlt+F9", cm_UnpackFiles
+  MENUITEM "&Tikrinti pakuotuosius failus\tAlt+Lyg2+F9", 518
+  MENUITEM "Palyginti &failø turinius...", 2022
+  MENUITEM "P&rievardá susieti su programa...", cm_associate
+  MENUITEM "Vidiniai susi&ejimai (vien tik su „Total Commander“)...", 519
+  MENUITEM "I&nformacija apie failà (aplankà)...\tAlt+Ávesti", cm_versioninfo
+  MENUITEM "Kiek reikia &vietos...", cm_GetFileSpace
+  MENUITEM "&Grupinis pervadinimas...\tVald+M", 2400
+  MENUITEM "R&aðyti ar taisyti pastabà...\tVald+Z", 2700
+  POPUP "&Spausdinti"
+    MENUITEM "&sàraðà...", 2027
+    MENUITEM "sàraðà su &poaplankiais...", 2028
+    MENUITEM "&failo turiná\tVald+F9", cm_PrintFile
+  END_POPUP
+  MENUITEM SEPARATOR
+  MENUITEM "Skai&dyti failà...", 560
+  MENUITEM "&Jungti failus...", 561
+  MENUITEM "&Uþkoduoti failà (MIME, UUE, XXE)...", 562
+  MENUITEM "I&ðkoduoti failà (MIME, UUE, XXE, BinHex)...", 563
+  MENUITEM "Sukurti &CRC kontrolines sumas (SFV formatu)...", 564
+  MENUITEM "Tikrinti CRC k&ontrolines sumas (ið SFV failø)", 565
+  MENUITEM SEPARATOR
+  MENUITEM "Baigti darbà su „Total Co&mmander“\tAlt+F4", 24340
+END_POPUP
+
+POPUP "&Atranka"
+  MENUITEM "Paþymëti &grupæ failø...\t+ (sk. srityje)", cm_spreadselection
+  MENUITEM "Atðaukti g&rupës þymëjimà...\t- (sk.)", cm_shrinkselection
+  MENUITEM "Pa&þymëti visus failus\tVald + + (sk.)", cm_selectall
+  MENUITEM "A&tðaukti visø þymëjimà\tVald + – (sk.)", cm_Clearall
+  MENUITEM "I&nvertuoti þymëjimà\t* (sk.)", cm_ExchangeSelection
+  MENUITEM "Paþymëti failus su tuo paèiu &prievardþiu\tAlt + + (sk.)",527
+  MENUITEM SEPARATOR
+  MENUITEM "Áraðyti &iðrankà", 530
+  MENUITEM "Gràþinti b&uvusià iðrankà\t/ (sk.)", 529
+  MENUITEM "Áraðyti iðrankà á &failà", 2031
+  MENUITEM "Ák&elti iðrankà ið failo", 2032
+  MENUITEM SEPARATOR
+  MENUITEM "K&opijuoti iðrinktus vardus á iðkarpinæ", 2017
+  MENUITEM "Kopijuoti á iðkarpinæ vardus su &keliu", 2018
+  MENUITEM "Á iðkarpinæ – vardus su &visa informacija", 2036
+  MENUITEM "Á iðkarpinæ – su keliu ir visa informaci&ja", 2037
+  MENUITEM SEPARATOR
+  MENUITEM "Pa&lyginti failø sàraðus\tLyg2+F2", cm_CompareDirs
+  MENUITEM "Palyginti ir pa&slëpti vienodus failus", cm_DirMatch
+END_POPUP
+
+POPUP "&Veiksmai"
+  MENUITEM "Aplan&kø perþiûra...\tAlt+F10", cm_CDtree
+  MENUITEM "Failø paie&ðka...\tAlt+F7", cm_searchfor
+  MENUITEM "Pavadinti &tomà...", cm_VolumeId
+  MENUITEM "&Informacija apie kompiuterá...", cm_sysinfo
+  MENUITEM "Aplankø &lyginimas...", 2020
+  MENUITEM "&Reikalingiausi aplankai...\tVald+D", 526
+  MENUITEM "&Gráþti á ankstesná aplankà\tAlt+kair. rodyklë", 570
+  MENUITEM SEPARATOR
+  MENUITEM "&DOS paleidimas", cm_ExecuteDOS
+  MENUITEM SEPARATOR
+  MENUITEM "Rodyti ir &poaplankiø failus\tVald+B", 2026
+  MENUITEM "&Atverti darbalaukio aplankà", 2121
+  MENUITEM "&Foninës veiksenos valdymas...",559
+  MENUITEM SEPARATOR
+  MENUITEM "&Sukeisti langus vietomis\tVald+U", cm_exchange
+  MENUITEM "&Veikiamàjá langà – á abi puses", cm_matchsrc
+END_POPUP
+
+POPUP "&Tinklas"
+  MENUITEM "&Prijungti tinklo diskus...", cm_NetConnect
+  MENUITEM "&Atjungti tinklo diskus...", cm_NetDisconnect
+  MENUITEM "&Dalytis veikiamuoju aplanku...", cm_NetShareDir
+  MENUITEM "At&ðaukti dalijimàsi aplanku...", cm_NetUnshareDir
+  MENUITEM "Ad&ministratoriaus nustatytas dalijimasis", 2204
+  MENUITEM SEPARATOR
+  MENUITEM "&FTP ryðiai...\tVald+F", 550
+  MENUITEM "&Naujas FTP ryðys...\tVald+N", 551
+  MENUITEM "N&utraukti FTP ryðá\tVald+Lyg2+F", 552
+  MENUITEM "R&odyti slepiamuosius failus", 553
+  MENUITEM "Parsi&siøsti pagal sàraðà...", 558
+  MENUITEM "&Ryðys su kitu kompiuteriu...", 2300
+END_POPUP
+
+POPUP "Vai&zdas"
+  MENUITEM "T&ik vardai\tVald+F1", cm_srcshort
+  MENUITEM "Visa in&formacija\tVald+F2", cm_srclong
+  MENUITEM "Pastab&os\tVald+Lyg2+F2", 300
+  MENUITEM "Papildomi &stulpeliai\tLyg2+F1", 270
+  MENUITEM "&Aplankø medis\tVald+F8", cm_srcTree
+  POPUP "Atskiras medis\tVald+Lyg2+F8"
+    MENUITEM "&0 (ne)", 3200
+    MENUITEM "&1 (vienas abiems langams)", 3201
+    MENUITEM "&2 (du skirtingi)", 3202
+  END_POPUP
+  MENUITEM "&Miniatiûros\tVald+Lyg2+F1", 269
+  MENUITEM "&Sparèioji perþiûra\tVald+Q", 304
+  MENUITEM "Langai vienas po kit&u", 305
+  MENUITEM "Nauja aplanko kor&telë\tVald+T", 3001
+  MENUITEM SEPARATOR
+  MENUITEM "Rodyti visus &failus\tVald+F10", cm_srcallfiles
+  MENUITEM "Rodyti &programø failus\tVald+F11", cm_srcexecs
+  MENUITEM "*.*", cm_srcuserspec
+  MENUITEM "Rodyti pagal p&rievardá...\tVald+F12", cm_srcuserdef
+  MENUITEM "Rodyti tik pa&þymëtus failus", 2023
+  MENUITEM SEPARATOR
+  MENUITEM "Rikiuoti pagal &vardà\tVald+F3", cm_srcbyname
+  MENUITEM "Rikiuoti pagal pri&evardá\tVald+F4", cm_srcbyext
+  MENUITEM "Rikiuoti pagal datà ir &laikà\tVald+F5", cm_srcbydatetime
+  MENUITEM "Rikiuoti pagal &dydá\tVald+F6", cm_srcbysize
+  MENUITEM "&Nerikiuoti\tVald+F7", cm_srcunsorted
+  MENUITEM SEPARATOR
+  MENUITEM "Rikiuoti &atbulai", cm_srcnegorder
+  MENUITEM SEPARATOR
+  MENUITEM "I&ð naujo perskaityti\tVald+R", cm_rereadsource
+END_POPUP
+
+POPUP "&Sàranka"
+  MENUITEM "&Parinktys...", cm_config
+  MENUITEM "Keisti &mygtukø juostà...", cm_ButtonConfig
+  MENUITEM "Tiesiogiai keisti &nuostatø failus...", 581
+  MENUITEM "Ásiminti &esamas langø padëtis", cm_configSavepos
+  MENUITEM "Ásiminti ir &failø rodymo nuostatas", 580
+END_POPUP
+
+STARTMENU
+
+HELP_BREAK
+
+POPUP "&Þinynas"
+  MENUITEM "&Turinys\tF1", cm_HelpIndex
+  MENUITEM "&Klaviðø reikðmës", cm_keyboard
+  MENUITEM "&Registravimasis", cm_register
+  MENUITEM "„Total Commander“ &svetainë", 640
+  MENUITEM SEPARATOR
+  MENUITEM "&Apie „Total Commander“ programà...", cm_About
+END_POPUP
