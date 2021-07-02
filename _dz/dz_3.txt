@@ -1,0 +1,18 @@
+Задание_1
+
+let value = +prompt('Введите сумму вклада');
+let procent = +prompt('Введите годовой процент вклада');
+let time = +prompt('Введите срок вклада в месяцах');
+
+for (let i = 1; i <= time; i += 1){
+  value = value + (value * (procent / 100 / 12));
+  console.log('Сумма на вкладе: ' + value.toFixed(3));
+}
+
+Задание_2
+
+let line
+for(line = 1; line <= 2; line += 1){
+  drawRect(0 , line *50, 150, 2, 'black');
+  drawRect(line *50 , 0, 2, 150, 'black');
+}

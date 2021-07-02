@@ -1,0 +1,31 @@
+Задание_1
+
+function get_money(value, procent, time){
+  for (let i = 1; i <= time; i += 1){
+   value = value + (value * (procent / 100 / 12));
+  }
+  return value.toFixed(2);
+}
+
+
+let value = +prompt('Введите сумму вклада');
+let procent = +prompt('Введите годовой процент вклада');
+let time = +prompt('Введите срок вклада в месяцах');
+
+console.log(get_money(value, procent, time))
+console.log(get_money(value, procent, 2 * time))
+console.log(get_money(value, procent, 3 * time))
+
+Задание_2
+
+function get_line(x, y, size){
+ let step = size / 3;
+ for(let i = 1; i <= 2; i += 1){
+  drawRect(x + step * i, y, 2, size, 'black');
+  drawRect(x, y  + step * i,  size, 2, 'black');
+ }
+}
+
+get_line(100,100,300); 
+get_line(150,150,200); 
+get_line(200,200,100);
