@@ -1,0 +1,4 @@
+"C:\Program Files (x86)\YSF\Butterfly-All\Butterfly.Shell.exe"
+
+Butterfly.Shell.exe
+
